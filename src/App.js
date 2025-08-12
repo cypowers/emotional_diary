@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import { getEmotionImgById } from './util';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>감정 일기장</h1>
+      <img src={getEmotionImgById(1)} alt="Emotion 1" />
+      <img src={getEmotionImgById(2)} alt="Emotion 2" />
+      <img src={getEmotionImgById(3)} alt="Emotion 3" />
+      <img src={getEmotionImgById(4)} alt="Emotion 4" />
+      <img src={getEmotionImgById(5)} alt="Emotion 5" />
     </div>
   );
 }
